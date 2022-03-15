@@ -1,0 +1,20 @@
+JavaScript:
+    -> Lenguaje de front
+        ->Navegador
+        ->HTML
+
+    ->Interpretado
+    ->Dinamicamente tipado
+
+
+JSON:
+    ->Contiene atributos y valores (Attribute:Value)    
+
+
+
+____________________________________________________________________________________
+
+Descargar 10 imagenes para la tienda
+
+
+tener index
