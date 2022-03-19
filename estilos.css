@@ -1,5 +1,35 @@
-.fondomovil{
-    
-    background-attachment: fixed;
-    height: 450px;
+body{
+    background: linear-gradient(to bottom, rgb(255, 154, 154), white);
+}
+
+#divtoyotaEdificio{
+    text-align: center;
+}
+
+#toyotaEdificio{
+    width: 400px;
+}
+
+.imgContact{
+ width: 35px;   
+}
+
+.h5Footer{
+    margin: 2rem;
+    text-justify: auto;
+}
+
+.h5Footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.vehiculosFooter{
+    margin-top: 2rem;
+}
+
+.footer{
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.376), rgb(250, 228, 228), rgba(255, 0, 0, 0.376));
+    border-radius: 3em;
+    padding-bottom: 2rem;
 }

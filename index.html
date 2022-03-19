@@ -11,33 +11,32 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark animate__animated animate__backInLeft">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark animate__animated animate__backInLeft">
             <div class="container-fluid">
-              <a id="titleNavBar" class="navbar-brand" href="#">Vehiculos DL</a>
+              <a id="titleNavBar" class="navbar-brand" href="index.html">Vehiculos DL</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" aria-current="page" href="#toyota">Nuestra marca</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#catalog">Nuestros vehiculos</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <li class="nav-item dropdown disabled">
+                    <a class="nav-link disabled dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Vehiculos
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="#">Camionetas</a></li>
                       <li><a class="dropdown-item" href="#">Automoviles</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#">Pick Ups</a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Proximamente...</a>
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
                   </li>
                 </ul>
                 <form class="d-flex">
@@ -51,26 +50,123 @@
     <main>
         <img id="imagetest" src="img/ToyotaBanner2.jpg" alt="Banner Vehiculos DL" class="img-fluid w-100">
     </main>
-    <section>
+    <section id="toyota" class="mt-5">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-8 align-self-center">
-                    <h4>Lo Mejor de Toyota </h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus non laborum debitis, libero cum quos, optio odit aspernatur explicabo quo nemo nobis? Ipsum minus rem veritatis tempore, modi explicabo quasi.
+                    <h4>¡La mejor marca!</h4>
+                    <p>
+                      Toyota Motor Corporation fue fundada en septiembre de 1933 bajo la compañía Toyoda Automatic Loom, una empresa que decidió dividir sus funciones y abrir un nuevo departamento dedicado a la fabricación de carros, a cargo del hijo del fundador, Kiichiro Toyoda. El primer vehículo fabricado fue un camión, el Toyota G1 en 1935. 
+                      <br><br>
+                      Toyota fue establecida oficialmente como una empresa independiente en 1937, separándose de Toyoda Automatic Loom para poder expandirse sin la sombra del padre.
+                      <br><br><br>
+                      En los últimos 20 años Toyota incrementó su presencia en Europa, y América masivamente, comenzó a levantar centros de servicio, venta, mantenimiento, fábricas y demás instalaciones centrales en varios países del mundo, desde Estados Unidos hasta Brasil, Inglaterra, Guatemala, entre otros.
+                      <br><br>
+                      Nacieron modelos muy relevantes, como el Toyota Supra, comenzaron a fabricar carros híbridos a partir del Prius y obtuvieron el récord en ventas a nivel mundial con el Toyota Corolla, comercializando más de 40 millones de unidades, fabricando el modelo durante más de 12 generaciones, y que hasta el día de hoy, sigue destacándose como un modelo fiable, seguro y de buen rendimiento.
+                      <br><br><br>
+                      Hoy Toyota es un icono en el mundo automotor, con vehículos en todos los segmentos, para todas las necesidades y presupuestos, especialmente en Latinoamérica, donde goza del protagonismo y la aceptación total por parte del público.
                     </p>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    Tienda
-                    </button>
                 </div>
-                <div class="col-4">
-                    <img src="img/imgStoreProducts/Prado.png" alt="Lo mejor de toyota" class="img-fluid w-100">
+                <div class="col-4 mt-5">
+                    <img src="img/iconToyota.png" alt="Lo mejor de toyota" class="img-fluid w-100">
                 </div>
             </div>
         </div>
     </section>
+    
+    <main>
+
+      <section id="catalog">
+          <section>
+              <div class="container mt-5">
+                  <div class="row">
+                    <div class="col-8 align-self-center">
+                      <h4>Nuestros vehiculos</h4>
+                  </div>
+                  </div>
+              </div>
+          </section>
+  
+          <div class="container mt-5">
+              <div class="row row-cols-1 row-cols-md-5 g-3" id="row.">
+  
+              </div>
+          </div>
+      </section>
+
+  </main>
+
+  <section>
+    <div class="modal fade" id="infoProductModal" tabindex="-1"  >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" >Vehiculos DL</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-5">
+                  <img src="" alt="" class="img-fluid w-100" id="imgInfo">
+                </div>
+                <div class="col-7 bg-light">
+                  <h3 class="text-center" id="nameInfo"></h3>
+                  <h5 class="text-center" id="priceInfo"></h5>
+                  <h5 class="text-center" id="descriptionInfo"></h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Añadir al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="nosotros" class="mt-5 mb-5">
     <section>
-        
+      <div class="container footer">
+        <div class="row">
+          <div class="col-4 text-center mt-5 conts">
+            <h3>Vehiculos</h3>
+            <div class="vehiculosFooter">
+            <h5><b>4RUNNER</b></h5>
+            <h5><b>COROLLA</b></h5>
+            <h5><b>COROLLA CROSS</b></h5>
+            <h5><b>FORTUNER</b></h5>
+            <h5><b>HILUX</b></h5>
+            <h5><b>LAND CRUISER 300</b></h5>
+            <h5><b>PRADO</b></h5>
+            <h5><b>PRADO TX</b></h5>
+            <h5><b>RAV4</b></h5>
+            <h5><b>YARISCROSS</b></h5>
+            </div>
+          </div>
+          <div class="col-4 text-center mt-5 conts">
+            <h3>Toyota</h3>
+            <div class="vehiculosFooter">
+            <h5><b>Historia</b></h5>
+            <h5><b>PQR</b></h5>
+            <h5><b>Trbaja con nosotros</b></h5>
+            <h5><b>Red de concesionarios</b></h5>
+            </div>
+          </div>
+          <div class="col-4 text-center mt-5 conts">
+            <h3>Contacto</h3>
+            <h5 class="h5Footer"><img class="imgContact" src="img/iconFb.png" alt=""><a href=""> Vehiculos DL</a></h5>
+            <h5 class="h5Footer"><img class="imgContact" src="img/iconWpp.png" alt=""><a href=""> +57 321 456 7897</a></h5>
+            <h5 class="h5Footer"><img class="imgContact" src="img/iconIg.png" alt=""><a href=""> @vehiculos_dl</a></h5>
+      
+        </div>
+      </div>
     </section>
+  </footer>
+
+    <!--
     <section>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"  aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
@@ -119,10 +215,10 @@
   <section>
     <button type="button" class="btn btn-primary" id="button">Haga clic</button>
   </section>
-
+-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+<script src="js/controller.js" type="module"></script>
 
 </body>
 </html>
