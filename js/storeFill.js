@@ -23,11 +23,6 @@ let row=document.getElementById("row.")
 // get array items in JS
 
 products.forEach(function(product){
-   // console.log(product.price)
-
-    // Print width JS
-
-    //Estructure
 
     //Creating column
     let column=document.createElement("div")
@@ -77,10 +72,6 @@ products.forEach(function(product){
 
     column.appendChild(card)
     row.appendChild(column)
-
-    //
-
-
 
 })//ForEach
 
