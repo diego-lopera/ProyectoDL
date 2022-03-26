@@ -32,10 +32,12 @@ products.forEach(function(product){
     //Creating column
     let column=document.createElement("div")
     column.classList.add("col")
+    column.classList.add("rounded-3")
     //Creating card
     let card=document.createElement("div")
     card.classList.add("card")
     card.classList.add("h-100")
+    card.classList.add("rounded-3")
     //Creating image
     let image=document.createElement("img")
     image.classList.add("card-img-top")
