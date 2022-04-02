@@ -8,7 +8,7 @@ export function expandInfo(event) {
             price:event.target.parentElement.querySelector("h5").textContent,
             description:event.target.parentElement.querySelector("h6").textContent,
         }
-        console.log(product)
+        //console.log(product)
 
         let img=document.getElementById("imgInfo")
         img.src=product.img
@@ -18,7 +18,9 @@ export function expandInfo(event) {
         price.textContent=product.price
         let description=document.getElementById("descriptionInfo")
         description.textContent=product.description
-        
+   
     }
+
+    return product
 
 }
