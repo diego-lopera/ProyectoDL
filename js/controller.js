@@ -21,12 +21,9 @@ containerStore.addEventListener("click",function(event){
 
 let cartProducts = []
 
-let buttonClear = document.getElementById("clearCart")
-//buttonClear.classList.add("invisible")
-
 let buttonAdd = document.getElementById("addCart")
 buttonAdd.addEventListener('click',function(event) {
-    //console.log("add to cart")
+
     //Capture quantity of product
     let quantity=document.getElementById("quantity").value
     document.getElementById("quantity").value="1"
@@ -38,13 +35,10 @@ buttonAdd.addEventListener('click',function(event) {
     cartProducts.forEach(function(product) {
         sum = sum+Number(product.quantity) 
     });
-    let quantityCart=document.getElementById("quantityCart")
-    quantityCart.textContent=sum
-    quantityCart.classList.remove("invisible")
-    //if(sum=0){buttonClear.classList.add("invisible")}
-    //else{buttonClear.classList.remove("invisible")}
+    buttonAdd=printCart(sum)
 })
 
+let buttonClear = document.getElementById("clearCart")
 buttonClear = document.getElementById("clearCart")
 buttonClear.addEventListener('click',function(event){
     cartProducts=[]
@@ -52,6 +46,5 @@ buttonClear.addEventListener('click',function(event){
     quantityCart.textContent=0
 
     quantityCart.classList.add("invisible")
-    
-    
+  
 })
