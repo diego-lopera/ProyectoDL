@@ -2,6 +2,7 @@
 
 import { printStore } from './storeFill.js'
 import {expandInfo} from './expandInfo.js'
+import {printCart} from './printCart.js'
 
 let product ={}
 
@@ -21,7 +22,7 @@ containerStore.addEventListener("click",function(event){
 let cartProducts = []
 
 let buttonClear = document.getElementById("clearCart")
-buttonClear.classList.add("invisible")
+//buttonClear.classList.add("invisible")
 
 let buttonAdd = document.getElementById("addCart")
 buttonAdd.addEventListener('click',function(event) {
@@ -40,8 +41,8 @@ buttonAdd.addEventListener('click',function(event) {
     let quantityCart=document.getElementById("quantityCart")
     quantityCart.textContent=sum
     quantityCart.classList.remove("invisible")
-    if(sum=0){buttonClear.classList.add("invisible")}
-    else{buttonClear.classList.remove("invisible")}
+    //if(sum=0){buttonClear.classList.add("invisible")}
+    //else{buttonClear.classList.remove("invisible")}
 })
 
 buttonClear = document.getElementById("clearCart")
