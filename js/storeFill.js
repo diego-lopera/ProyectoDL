@@ -17,6 +17,8 @@ let products = [
 
 // Create Reference to fatherComponente
 
+
+
 let row=document.getElementById("row.")
 
 
