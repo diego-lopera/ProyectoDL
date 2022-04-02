@@ -3,16 +3,16 @@ export function printStore() {
     // Array of Objects
 
 let products = [
-    {name:"Toyota 4RUNNER",price:"350000000",image:'../img/imgStoreProducts/4runner.png',description:"Camioneta Toyota 4RUNNER 2023"},
-    {name:"Toyota Prado TX",price:"150000000",image:'../img/imgStoreProducts/PradoTX.png',description:"Camioneta Toyota Prado TX 2023"},
-    {name:"Toyota Prado TXL",price:"180000000",image:'../img/imgStoreProducts/PradoTXL.png',description:"Camioneta Toyota Prado TXL 2023"},
-    {name:"Toyota Hilux",price:"90000000",image:'../img/imgStoreProducts/HILUX.png',description:"Pick up Toyota Hilux"},
-    {name:"Toyota Fortuner",price:"250000000",image:'../img/imgStoreProducts/Fortuner.png',description:"Camioneta Toyota Fortuner"},
-    {name:"Toyota Land Cruiser 300",price:"430000000",image:'../img/imgStoreProducts/LandCruiser300.png',description:"Camioneta Toyota Land Cruiser 300"},
-    {name:"Toyota Corolla",price:"80000000",image:'../img/imgStoreProducts/Corolla.png',description:"Automovil Toyota Corolla"},
-    {name:"Toyota Yaris Crosss",price:"120000000",image:'../img/imgStoreProducts/YarisCross.png',description:"Camioneta Toyota Yaris Cross"},
-    {name:"Toyota Corolla Cross",price:"150000000",image:'../img/imgStoreProducts/COROLLACROSS.png',description:"Camioneta Toyota Corolla Cross"},
-    {name:"Toyota Rav4",price:"310000000",image:'../img/imgStoreProducts/RAV4.png',description:"Camioneta Toyota Rav4"},
+    {name:"Toyota 4RUNNER",price:"350000000",image:'../img/4runner.png',description:"Camioneta Toyota 4RUNNER 2023"},
+    {name:"Toyota Prado TX",price:"150000000",image:'../img/PradoTX.png',description:"Camioneta Toyota Prado TX 2023"},
+    {name:"Toyota Prado TXL",price:"180000000",image:'../img/PradoTXL.png',description:"Camioneta Toyota Prado TXL 2023"},
+    {name:"Toyota Hilux",price:"90000000",image:'../img/HILUX.png',description:"Pick up Toyota Hilux"},
+    {name:"Toyota Fortuner",price:"250000000",image:'../img/Fortuner.png',description:"Camioneta Toyota Fortuner"},
+    {name:"Toyota Land Cruiser 300",price:"430000000",image:'../img/LandCruiser300.png',description:"Camioneta Toyota Land Cruiser 300"},
+    {name:"Toyota Corolla",price:"80000000",image:'../img/Corolla.png',description:"Automovil Toyota Corolla"},
+    {name:"Toyota Yaris Crosss",price:"120000000",image:'../img/YarisCross.png',description:"Camioneta Toyota Yaris Cross"},
+    {name:"Toyota Corolla Cross",price:"150000000",image:'../img/COROLLACROSS.png',description:"Camioneta Toyota Corolla Cross"},
+    {name:"Toyota Rav4",price:"310000000",image:'../img/RAV4.png',description:"Camioneta Toyota Rav4"},
 ]
 
 // Create Reference to fatherComponente
