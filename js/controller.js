@@ -100,11 +100,6 @@ purchaseSummary.addEventListener('click',function(event) {
         column3.appendChild(Lprice)
         column4.appendChild(price)
 
-        /*column2.appendChild(Lquantity)
-        column2.appendChild(quantity)
-        column2.appendChild(Lprice)
-        column2.appendChild(price)*/
-
         row.appendChild(column1)
         row.appendChild(column2)
         container.appendChild(row)
