@@ -112,14 +112,3 @@ purchaseSummary.addEventListener('click',function(event) {
 
     summaryModal.show()
 })
-
-/*
-let containerSummary = document.getElementById("row")
-let summaryModal = new bootstrap.Modal(document.getElementById('summaryModal'))
-containerSummary.addEventListener("click",function(event){
-    
-    product=cartSummary(event)
-    if(event.target.classList.contains("btn")){
-    summaryModal.show()}
-})
-*/
