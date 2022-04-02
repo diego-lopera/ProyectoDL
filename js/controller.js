@@ -89,6 +89,8 @@ purchaseSummary.addEventListener('click',function(event) {
         Lprice.textContent="Precio:"
         let price = document.createElement("h6")
         price.textContent=product.price
+        let Lsubtot = document.createElement("h6")
+        Lsubtot.textContent="Subtotal:"
 
         column1.appendChild(image)
         column2.appendChild(name)
@@ -99,7 +101,9 @@ purchaseSummary.addEventListener('click',function(event) {
         column4.appendChild(quantity)
         column3.appendChild(Lprice)
         column4.appendChild(price)
+        column3.appendChild(Lsubtot)
 
+        
         row.appendChild(column1)
         row.appendChild(column2)
         container.appendChild(row)
