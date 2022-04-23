@@ -1,6 +1,7 @@
 import {getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"
 
 let buttonRegister = document.getElementById("buttonRegister")
+let infoModalLogin = new bootstrap.Modal(document.getElementById('infoModalLogin'))
 buttonRegister.addEventListener('click',function(event){
     event.preventDefault()
 
@@ -12,13 +13,19 @@ buttonRegister.addEventListener('click',function(event){
     .then((userCredential) => {
     // Signed in
     const user = userCredential.user;
-    console.log("Exito en el registro...")
+    let infoText = document.getElementById("modalMessage")
+    let form = document.getElementById("registerForm")
+    form.reset()
+    infoText.textContent= "Registro exitoso"
+    infoModalLogin.show()
     // ...
     })
     .catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
-    console.log("Error de registro...")
+    let infoText = document.getElementById("modalMessage")
+    infoText.textContent= "Error de registro: "+errorMessage
+    infoModalLogin.show()
     // ..
     });
 

@@ -3,7 +3,7 @@
 import { printStore } from './storeFill.js'
 import {expandInfo} from './expandInfo.js'
 import {printCart} from './printCart.js'
-import {cartSummary} from './cartSummary.js'
+//  import {cartSummary} from './cartSummary.js'
 
 let product ={}
 
@@ -14,6 +14,7 @@ printStore()
 //Calling module expandInfo
 let containerStore = document.getElementById("row.")
 let infoProductModal = new bootstrap.Modal(document.getElementById('infoProductModal'))
+let summaryModal = new bootstrap.Modal(document.getElementById('summaryModal'))
 containerStore.addEventListener("click",function(event){
     
     product=expandInfo(event)
@@ -52,11 +53,20 @@ buttonClear.addEventListener('click',function(event){
     quantityCart.classList.add("invisible")
 })
 
+let buttonClear2 = document.getElementById("clearCart2")
+buttonClear2.addEventListener('click',function(event){
+    cartProducts=[]
+    let quantityCart=document.getElementById("quantityCart")
+    quantityCart.textContent=0
+
+    quantityCart.classList.add("invisible")
+    summaryModal.hide()
+})
+
 
 let purchaseSummary = document.getElementById("cartButton")
 purchaseSummary.addEventListener('click',function(event) {
-    let container = document.getElementById("containerSale")
-    let summaryModal = new bootstrap.Modal(document.getElementById('summaryModal')) 
+    let container = document.getElementById("containerSale") 
     container.innerHTML=""
     cartProducts.forEach(function(product){
         let row = document.createElement("div")
@@ -105,6 +115,7 @@ purchaseSummary.addEventListener('click',function(event) {
         row.appendChild(column1)
         row.appendChild(column2)
         container.appendChild(row)
+
     })
     summaryModal.show()
 })
