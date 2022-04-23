@@ -18,6 +18,9 @@ buttonRegister.addEventListener('click',function(event){
     form.reset()
     infoText.textContent= "Registro exitoso"
     infoModalLogin.show()
+    setTimeout(function(){
+        infoModalLogin.hide()
+    },1500)
     // ...
     })
     .catch((error) => {
@@ -26,6 +29,9 @@ buttonRegister.addEventListener('click',function(event){
     let infoText = document.getElementById("modalMessage")
     infoText.textContent= "Error de registro: "+errorMessage
     infoModalLogin.show()
+    setTimeout(function(){
+        infoModalLogin.hide()
+    },1500)
     // ..
     });
 
