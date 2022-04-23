@@ -13,6 +13,8 @@ buttonRegister.addEventListener('click',function(event){
     .then((userCredential) => {
     // Signed in
     const user = userCredential.user;
+    console.log(user)
+    
     let infoText = document.getElementById("modalMessage")
     let form = document.getElementById("registerForm")
     form.reset()

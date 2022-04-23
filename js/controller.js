@@ -33,6 +33,15 @@ buttonAdd.addEventListener('click',function(event) {
     //Add quantity to object product
     product.quantity=quantity
     //Add product to cart
+    cartProducts.forEach(function(productAux){
+        if (productAux.name==product.name) {
+        
+        console.log("Ya esta")
+        }
+        else{
+            console.log("No esta")
+        }
+    })
     cartProducts.push(product)
     let sum=0
     cartProducts.forEach(function(product) {
@@ -68,7 +77,10 @@ let purchaseSummary = document.getElementById("cartButton")
 purchaseSummary.addEventListener('click',function(event) {
     let container = document.getElementById("containerSale") 
     container.innerHTML=""
+
     cartProducts.forEach(function(product){
+
+
         let row = document.createElement("div")
         row.classList.add("row")
         let column1 = document.createElement("div")
