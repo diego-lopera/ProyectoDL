@@ -30,26 +30,18 @@ buttonAdd.addEventListener('click',function(event) {
     //Capture quantity of product
     let quantity=document.getElementById("quantity").value
     document.getElementById("quantity").value="1"
+    let sum=0
     //Add quantity to object product
     product.quantity=quantity
     //Add product to cart
-    cartProducts.forEach(function(productAux){
-        if (productAux.name==product.name) {
-        
-        console.log("Ya esta")
-        }
-        else{
-            console.log("No esta")
-        }
-    })
+
     cartProducts.push(product)
-    let sum=0
     cartProducts.forEach(function(product) {
         sum = sum+Number(product.quantity) 
     });
     printCart(sum)
     infoProductModal.hide()
-    
+
 })
 
 
