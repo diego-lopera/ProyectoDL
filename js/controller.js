@@ -70,6 +70,10 @@ purchaseSummary.addEventListener('click',function(event) {
     let container = document.getElementById("containerSale") 
     container.innerHTML=""
 
+    let tot = 0
+        let totalPrice = document.getElementById("totalPrice")
+        totalPrice.innerHTML = tot
+
     cartProducts.forEach(function(product){
 
 
@@ -103,6 +107,9 @@ purchaseSummary.addEventListener('click',function(event) {
         price.textContent=product.price
         let Lsubtot = document.createElement("h6")
         Lsubtot.textContent="Subtotal:"
+        let subtot = document.createElement("h6")
+        let subtotal = (product.price * product.quantity)
+        subtot.textContent=subtotal
 
         column1.appendChild(image)
         column2.appendChild(name)
@@ -114,12 +121,14 @@ purchaseSummary.addEventListener('click',function(event) {
         column3.appendChild(Lprice)
         column4.appendChild(price)
         column3.appendChild(Lsubtot)
+        column4.appendChild(subtot)
 
         
         row.appendChild(column1)
         row.appendChild(column2)
         container.appendChild(row)
 
+        totalPrice.innerHTML= subtotal
     })
     summaryModal.show()
 })
