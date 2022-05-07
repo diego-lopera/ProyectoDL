@@ -127,8 +127,15 @@ purchaseSummary.addEventListener('click',function(event) {
         row.appendChild(column2)
         container.appendChild(row)
 
-        totalPrice.innerHTML= tot
+        totalPrice.innerHTML="$ "+tot+" COP"
     })
+
+    let convertDollar = document.getElementById("convertDollar")
+    convertDollar.addEventListener('click',function(event){
+    let conv = tot / 4000
+    totalPrice.innerHTML="$ "+conv+" USD"
+})
+
     summaryModal.show()
 })
 
